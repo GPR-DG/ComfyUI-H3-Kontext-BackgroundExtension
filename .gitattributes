@@ -1,0 +1,2 @@
+# Keep audited source Git blobs byte-exact across Windows and Linux.
+* -text

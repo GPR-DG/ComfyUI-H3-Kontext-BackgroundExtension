@@ -1,0 +1,85 @@
+{
+  "sources": {
+    "core": {
+      "repository": "https://github.com/GPR-DG/ComfyUI-H3HardCutRunner",
+      "commit": "e1516896fb2b90e66b9d3ae811a5004cb5ff5626",
+      "branch": "feature/background-reference-nodes",
+      "current_branch_head": "e1516896fb2b90e66b9d3ae811a5004cb5ff5626",
+      "pinned_tree": "fa8c94d9aa5010329e781d49b791aa27fac398ca"
+    },
+    "h3k": {
+      "repository": "https://github.com/GPR-DG/ComfyUI-H3-Adapter",
+      "commit": "687c052fb2d5cb618a763c5ab8cc672df1295d1b",
+      "branch": "feature/h3k-kontext-delivery",
+      "current_branch_head": "687c052fb2d5cb618a763c5ab8cc672df1295d1b",
+      "pinned_tree": "f979378e694d97f860d65cd45cd8c65ffde125d8"
+    }
+  },
+  "tested_main_commit": "55ce7b27dde514ee79b3df7d52b78d7442f4dd38",
+  "files": [
+    {
+      "source": "core",
+      "path": "background_core/h3_background_nodes.py",
+      "sha256": "3f6a8db4f77634ee3f6c1f25f4b8f40d80ec9e209791d609ca1adc70535f4cb9",
+      "normalized_sha256": "3f6a8db4f77634ee3f6c1f25f4b8f40d80ec9e209791d609ca1adc70535f4cb9",
+      "git_blob_sha": "a1d881cdbca823949dda7a33a8dd2de3dc3d7401",
+      "upstream_path": "h3_background_nodes.py"
+    },
+    {
+      "source": "core",
+      "path": "background_core/h3_background_cache.py",
+      "sha256": "f55e04251f4085ce10f7411a262af392b61b795357edb14919530c8d9fa059c4",
+      "normalized_sha256": "f55e04251f4085ce10f7411a262af392b61b795357edb14919530c8d9fa059c4",
+      "git_blob_sha": "1f121ab56df586598dcc549c2c345e1e4236d680",
+      "upstream_path": "h3_background_cache.py"
+    },
+    {
+      "source": "core",
+      "path": "background_core/h3_background_contracts.py",
+      "sha256": "f74e17f9b6145a3f2208eec210be6125636feb858f094898e24d9fe7e71f0b31",
+      "normalized_sha256": "f74e17f9b6145a3f2208eec210be6125636feb858f094898e24d9fe7e71f0b31",
+      "git_blob_sha": "c8791dea0fcf7e02c01ffa704616885fbad03874",
+      "upstream_path": "h3_background_contracts.py"
+    },
+    {
+      "source": "core",
+      "path": "background_core/h3_environment_matcher.py",
+      "sha256": "23442b522a92630baa777852027c837d6d76b3086e5e4ffa0d42600b571889b3",
+      "normalized_sha256": "23442b522a92630baa777852027c837d6d76b3086e5e4ffa0d42600b571889b3",
+      "git_blob_sha": "66fb50686aeb7be5bf78ba9e5c560bbc50cf9bf3",
+      "upstream_path": "h3_environment_matcher.py"
+    },
+    {
+      "source": "core",
+      "path": "background_core/h3_best_background_frame.py",
+      "sha256": "b4035a9cd8acc1ac12b7f26959e074a8a7c9f7ebf49eee8b06308c6ee7aca45f",
+      "normalized_sha256": "b4035a9cd8acc1ac12b7f26959e074a8a7c9f7ebf49eee8b06308c6ee7aca45f",
+      "git_blob_sha": "1e7e48a30399f4f3073401c7641b0ac0a2eec8f6",
+      "upstream_path": "h3_best_background_frame.py"
+    },
+    {
+      "source": "h3k",
+      "path": "h3_kontext_bridge/nodes.py",
+      "sha256": "d435485cfb8c7e658b7ba444abe176e59160873a7ea0e3e8d52de61f02dc2d85",
+      "normalized_sha256": "d435485cfb8c7e658b7ba444abe176e59160873a7ea0e3e8d52de61f02dc2d85",
+      "git_blob_sha": "987e181bcb3ac59b24d2e77f68981fcd9fe30ca6",
+      "upstream_path": "h3_kontext_bridge/nodes.py"
+    },
+    {
+      "source": "h3k",
+      "path": "h3_kontext_bridge/__init__.py",
+      "sha256": "4c0f96b0f0006df5a559d09d44b8d521a32d7992383223310b5ba2a3f88e3e42",
+      "normalized_sha256": "4c0f96b0f0006df5a559d09d44b8d521a32d7992383223310b5ba2a3f88e3e42",
+      "git_blob_sha": "39a8c6bf593f484470ded4f9172655157d6845db",
+      "upstream_path": "h3_kontext_bridge/__init__.py"
+    },
+    {
+      "source": "h3k",
+      "path": "h3_kontext_bridge/core-required-sha256.json",
+      "sha256": "c98ae5ce6b7125284d5fa507d56c1bee66c432d4b50a702a2fad0d8a27527674",
+      "normalized_sha256": "c98ae5ce6b7125284d5fa507d56c1bee66c432d4b50a702a2fad0d8a27527674",
+      "git_blob_sha": "364c7c7de2a4ba89fe8213551b1fe6ee39b31cac",
+      "upstream_path": "h3_kontext_bridge/core-required-sha256.json"
+    }
+  ]
+}

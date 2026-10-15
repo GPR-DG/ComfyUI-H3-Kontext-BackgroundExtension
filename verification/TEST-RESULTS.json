@@ -1,0 +1,718 @@
+{
+  "version": "1.0.0",
+  "status": "PASS_LOCAL_RELEASE_GATES",
+  "missing_node_check": {
+    "H3CBackgroundTaskStart": "PASS",
+    "H3CBestBackgroundFrame": "PASS",
+    "H3CBackgroundTaskCleanup": "PASS",
+    "H3KBackgroundResolve": "PASS",
+    "H3KBackgroundWashClaim": "PASS",
+    "H3KBackgroundFinish": "PASS",
+    "H3KBackgroundSource": "PASS",
+    "H3KStageGuard": "PASS",
+    "H3KRecipe": "PASS",
+    "H3KPromptCapture": "PASS",
+    "H3KStagePreview": "PASS"
+  },
+  "actual_main_extension_nodes": [
+    "H3CBackgroundAttachClean",
+    "H3CBackgroundResolve",
+    "H3CBackgroundTaskCleanup",
+    "H3CBackgroundTaskStart",
+    "H3CBackgroundWashClaim",
+    "H3CBestBackgroundFrame",
+    "H3KBackgroundFinish",
+    "H3KBackgroundResolve",
+    "H3KBackgroundSource",
+    "H3KBackgroundWashClaim",
+    "H3KPromptCapture",
+    "H3KRecipe",
+    "H3KStageGuard",
+    "H3KStagePreview"
+  ],
+  "internal_dependencies": [
+    "H3CBackgroundResolve",
+    "H3CBackgroundWashClaim",
+    "H3CBackgroundAttachClean"
+  ],
+  "source_files_byte_exact": 8,
+  "protected_files_checked": 43,
+  "protected_files_changed": 0,
+  "source_commits": {
+    "core": "e1516896fb2b90e66b9d3ae811a5004cb5ff5626",
+    "h3k": "687c052fb2d5cb618a763c5ab8cc672df1295d1b"
+  },
+  "main_core_commit": "55ce7b27dde514ee79b3df7d52b78d7442f4dd38",
+  "adapter_main_commit": "5137af844600695fd803dd5627887d4e29013941",
+  "comfyui": {
+    "commit": "0df64eb242b7c5759c3e86afd5d1846d923b1033",
+    "version": "0.39.0",
+    "verified_files": [
+      {
+        "path": "nodes.py",
+        "git_blob_sha": "c0dd5563fa932f30bdbaff82783c1cfb3124be5b",
+        "sha256": "8c5a0239a4d3b9709085348a96d25184d28fa2267c2421b7f354614c03f3139c"
+      },
+      {
+        "path": "execution.py",
+        "git_blob_sha": "d4a68b32a709c906e4b5b5627033974b8ed2f1ec",
+        "sha256": "3ce8f730e5a64c25c596351b4173edcf5a6948e8486d3531bd7d319f1eb114af"
+      },
+      {
+        "path": "comfy_execution/graph.py",
+        "git_blob_sha": "f3c27aeeac6232a5234d0b39806b4c988b8caeed",
+        "sha256": "b78c69dda0718e2c6a44fe54d822470632ff638e467ee8448e2d3fab67dbbf0a"
+      },
+      {
+        "path": "comfy_extras/nodes_flux.py",
+        "git_blob_sha": "e9986c9e7227c4217029961addaed447b0a66b2c",
+        "sha256": "71c9d804a9acfb7a828fecb8fcc4b93e28f4417f0c4259a68910f4027059741f"
+      }
+    ]
+  },
+  "python_tested": "3.12.14",
+  "package_suite": {
+    "tests": 22,
+    "status": "PASS",
+    "skipped": 0
+  },
+  "core_suite": {
+    "tests": 104,
+    "status": "PASS",
+    "skipped": 0
+  },
+  "adapter_api_a2_h3k_suite": {
+    "tests": 207,
+    "status": "PASS",
+    "skipped": 0
+  },
+  "javascript": {
+    "files": 6,
+    "status": "PASS",
+    "skipped": 0
+  },
+  "official_comfyui_matrices": [
+    {
+      "comfyui_version": "0.39.0",
+      "core": "main",
+      "order": "core-first",
+      "added": {
+        "ComfyUI-H3HardCutRunner": [
+          "H3COrderedMergeFinish",
+          "H3COrderedMergeStep",
+          "H3CPromptCompiler",
+          "H3CShotDualRefPad",
+          "H3CShotGuideWindowAppend",
+          "H3CShotGuideWindowPlanner",
+          "H3CShotGuideWindowSelect",
+          "H3CShotPlanner",
+          "H3CShotPolicy",
+          "H3CShotReferenceRouter",
+          "H3CShotSelectPad",
+          "H3CShotTrim",
+          "H3HardCutRunner",
+          "H3HardCutRunnerFunControl",
+          "H3HardCutRunnerSceneVLM",
+          "H3HardCutRunnerSceneVLMFunControl",
+          "H3HardCutRunnerShotPromptEmptyShot",
+          "H3OptionalPicture3",
+          "H3ShotSceneVLM"
+        ],
+        "ComfyUI-H3-Kontext-BackgroundExtension": [
+          "H3CBackgroundAttachClean",
+          "H3CBackgroundResolve",
+          "H3CBackgroundTaskCleanup",
+          "H3CBackgroundTaskStart",
+          "H3CBackgroundWashClaim",
+          "H3CBestBackgroundFrame",
+          "H3KBackgroundFinish",
+          "H3KBackgroundResolve",
+          "H3KBackgroundSource",
+          "H3KBackgroundWashClaim",
+          "H3KPromptCapture",
+          "H3KRecipe",
+          "H3KStageGuard",
+          "H3KStagePreview"
+        ]
+      },
+      "source_algorithms_unmodified": true,
+      "neural_inference": false,
+      "paid_api_calls": 0,
+      "api_a2_added": [
+        "H3A2APIGuard",
+        "H3A2APISource",
+        "H3A2BackgroundFinish",
+        "H3A2BackgroundResolve",
+        "H3A2BackgroundWashClaim",
+        "H3A2PromptCapture",
+        "H3A2Recipe",
+        "H3ImageEdit"
+      ],
+      "scenarios": {
+        "real_core_resolve_claim_attach_cleanup": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "7"
+          ]
+        },
+        "normal_success_and_two_real_PreviewImage_outputs": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "identical_prompt_repeated_execution": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "kontext_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "z_image_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [
+            "20"
+          ],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "retry_after_failures": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "active_task_before_ready_hit": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "ready_hit_skips_failing_neural_branches": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "6",
+            "7"
+          ]
+        },
+        "concurrent_queue_submissions_isolated_and_cleaned": {
+          "status": "PASS",
+          "concurrent_submissions": 2,
+          "dispatch": "official serial worker",
+          "unique_tasks": 2
+        },
+        "task_isolation": {
+          "status": "PASS",
+          "unique_task_ids": 7
+        }
+      },
+      "fixture_neural_calls": {
+        "kontext": 8,
+        "qwen": 7,
+        "z": 7
+      }
+    },
+    {
+      "comfyui_version": "0.39.0",
+      "core": "main",
+      "order": "extension-first",
+      "added": {
+        "ComfyUI-H3-Kontext-BackgroundExtension": [
+          "H3CBackgroundAttachClean",
+          "H3CBackgroundResolve",
+          "H3CBackgroundTaskCleanup",
+          "H3CBackgroundTaskStart",
+          "H3CBackgroundWashClaim",
+          "H3CBestBackgroundFrame",
+          "H3KBackgroundFinish",
+          "H3KBackgroundResolve",
+          "H3KBackgroundSource",
+          "H3KBackgroundWashClaim",
+          "H3KPromptCapture",
+          "H3KRecipe",
+          "H3KStageGuard",
+          "H3KStagePreview"
+        ],
+        "ComfyUI-H3HardCutRunner": [
+          "H3COrderedMergeFinish",
+          "H3COrderedMergeStep",
+          "H3CPromptCompiler",
+          "H3CShotDualRefPad",
+          "H3CShotGuideWindowAppend",
+          "H3CShotGuideWindowPlanner",
+          "H3CShotGuideWindowSelect",
+          "H3CShotPlanner",
+          "H3CShotPolicy",
+          "H3CShotReferenceRouter",
+          "H3CShotSelectPad",
+          "H3CShotTrim",
+          "H3HardCutRunner",
+          "H3HardCutRunnerFunControl",
+          "H3HardCutRunnerSceneVLM",
+          "H3HardCutRunnerSceneVLMFunControl",
+          "H3HardCutRunnerShotPromptEmptyShot",
+          "H3OptionalPicture3",
+          "H3ShotSceneVLM"
+        ]
+      },
+      "source_algorithms_unmodified": true,
+      "neural_inference": false,
+      "paid_api_calls": 0,
+      "api_a2_added": [
+        "H3A2APIGuard",
+        "H3A2APISource",
+        "H3A2BackgroundFinish",
+        "H3A2BackgroundResolve",
+        "H3A2BackgroundWashClaim",
+        "H3A2PromptCapture",
+        "H3A2Recipe",
+        "H3ImageEdit"
+      ],
+      "scenarios": {
+        "real_core_resolve_claim_attach_cleanup": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "7"
+          ]
+        },
+        "normal_success_and_two_real_PreviewImage_outputs": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "identical_prompt_repeated_execution": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "kontext_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "z_image_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [
+            "20"
+          ],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "retry_after_failures": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "active_task_before_ready_hit": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "ready_hit_skips_failing_neural_branches": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "6",
+            "7"
+          ]
+        },
+        "concurrent_queue_submissions_isolated_and_cleaned": {
+          "status": "PASS",
+          "concurrent_submissions": 2,
+          "dispatch": "official serial worker",
+          "unique_tasks": 2
+        },
+        "task_isolation": {
+          "status": "PASS",
+          "unique_task_ids": 7
+        }
+      },
+      "fixture_neural_calls": {
+        "kontext": 8,
+        "qwen": 7,
+        "z": 7
+      }
+    },
+    {
+      "comfyui_version": "0.39.0",
+      "core": "feature",
+      "order": "core-first",
+      "added": {
+        "ComfyUI-H3HardCutRunner": [
+          "H3CBackgroundAttachClean",
+          "H3CBackgroundResolve",
+          "H3CBackgroundTaskCleanup",
+          "H3CBackgroundTaskStart",
+          "H3CBackgroundWashClaim",
+          "H3CBestBackgroundFrame",
+          "H3COrderedMergeFinish",
+          "H3COrderedMergeStep",
+          "H3CPromptCompiler",
+          "H3CShotDualRefPad",
+          "H3CShotGuideWindowAppend",
+          "H3CShotGuideWindowPlanner",
+          "H3CShotGuideWindowSelect",
+          "H3CShotPlanner",
+          "H3CShotPolicy",
+          "H3CShotReferenceRouter",
+          "H3CShotSelectPad",
+          "H3CShotTrim",
+          "H3HardCutRunner",
+          "H3HardCutRunnerFunControl",
+          "H3HardCutRunnerSceneVLM",
+          "H3HardCutRunnerSceneVLMFunControl",
+          "H3HardCutRunnerShotPromptEmptyShot",
+          "H3OptionalPicture3",
+          "H3ShotSceneVLM"
+        ],
+        "ComfyUI-H3-Kontext-BackgroundExtension": [
+          "H3KBackgroundFinish",
+          "H3KBackgroundResolve",
+          "H3KBackgroundSource",
+          "H3KBackgroundWashClaim",
+          "H3KPromptCapture",
+          "H3KRecipe",
+          "H3KStageGuard",
+          "H3KStagePreview"
+        ]
+      },
+      "source_algorithms_unmodified": true,
+      "neural_inference": false,
+      "paid_api_calls": 0,
+      "api_a2_added": [
+        "H3A2APIGuard",
+        "H3A2APISource",
+        "H3A2BackgroundFinish",
+        "H3A2BackgroundResolve",
+        "H3A2BackgroundWashClaim",
+        "H3A2PromptCapture",
+        "H3A2Recipe",
+        "H3ImageEdit"
+      ],
+      "scenarios": {
+        "real_core_resolve_claim_attach_cleanup": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "7"
+          ]
+        },
+        "normal_success_and_two_real_PreviewImage_outputs": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "identical_prompt_repeated_execution": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "kontext_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "z_image_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [
+            "20"
+          ],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "retry_after_failures": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "active_task_before_ready_hit": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "ready_hit_skips_failing_neural_branches": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "6",
+            "7"
+          ]
+        },
+        "concurrent_queue_submissions_isolated_and_cleaned": {
+          "status": "PASS",
+          "concurrent_submissions": 2,
+          "dispatch": "official serial worker",
+          "unique_tasks": 2
+        },
+        "task_isolation": {
+          "status": "PASS",
+          "unique_task_ids": 7
+        }
+      },
+      "fixture_neural_calls": {
+        "kontext": 8,
+        "qwen": 7,
+        "z": 7
+      }
+    },
+    {
+      "comfyui_version": "0.39.0",
+      "core": "feature",
+      "order": "extension-first",
+      "added": {
+        "ComfyUI-H3-Kontext-BackgroundExtension": [
+          "H3KBackgroundFinish",
+          "H3KBackgroundResolve",
+          "H3KBackgroundSource",
+          "H3KBackgroundWashClaim",
+          "H3KPromptCapture",
+          "H3KRecipe",
+          "H3KStageGuard",
+          "H3KStagePreview"
+        ],
+        "ComfyUI-H3HardCutRunner": [
+          "H3CBackgroundAttachClean",
+          "H3CBackgroundResolve",
+          "H3CBackgroundTaskCleanup",
+          "H3CBackgroundTaskStart",
+          "H3CBackgroundWashClaim",
+          "H3CBestBackgroundFrame",
+          "H3COrderedMergeFinish",
+          "H3COrderedMergeStep",
+          "H3CPromptCompiler",
+          "H3CShotDualRefPad",
+          "H3CShotGuideWindowAppend",
+          "H3CShotGuideWindowPlanner",
+          "H3CShotGuideWindowSelect",
+          "H3CShotPlanner",
+          "H3CShotPolicy",
+          "H3CShotReferenceRouter",
+          "H3CShotSelectPad",
+          "H3CShotTrim",
+          "H3HardCutRunner",
+          "H3HardCutRunnerFunControl",
+          "H3HardCutRunnerSceneVLM",
+          "H3HardCutRunnerSceneVLMFunControl",
+          "H3HardCutRunnerShotPromptEmptyShot",
+          "H3OptionalPicture3",
+          "H3ShotSceneVLM"
+        ]
+      },
+      "source_algorithms_unmodified": true,
+      "neural_inference": false,
+      "paid_api_calls": 0,
+      "api_a2_added": [
+        "H3A2APIGuard",
+        "H3A2APISource",
+        "H3A2BackgroundFinish",
+        "H3A2BackgroundResolve",
+        "H3A2BackgroundWashClaim",
+        "H3A2PromptCapture",
+        "H3A2Recipe",
+        "H3ImageEdit"
+      ],
+      "scenarios": {
+        "real_core_resolve_claim_attach_cleanup": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "7"
+          ]
+        },
+        "normal_success_and_two_real_PreviewImage_outputs": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "identical_prompt_repeated_execution": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "kontext_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "z_image_failure_blocks_ready": {
+          "status": "PASS",
+          "expected_success": false,
+          "output_nodes": [
+            "20"
+          ],
+          "pending_verified_and_explicit_cancel_cleaned": true
+        },
+        "retry_after_failures": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "active_task_before_ready_hit": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "17",
+            "18",
+            "20",
+            "21"
+          ]
+        },
+        "ready_hit_skips_failing_neural_branches": {
+          "status": "PASS",
+          "expected_success": true,
+          "output_nodes": [
+            "6",
+            "7"
+          ]
+        },
+        "concurrent_queue_submissions_isolated_and_cleaned": {
+          "status": "PASS",
+          "concurrent_submissions": 2,
+          "dispatch": "official serial worker",
+          "unique_tasks": 2
+        },
+        "task_isolation": {
+          "status": "PASS",
+          "unique_task_ids": 7
+        }
+      },
+      "fixture_neural_calls": {
+        "kontext": 8,
+        "qwen": 7,
+        "z": 7
+      }
+    }
+  ],
+  "original_json": {
+    "nodes": 132,
+    "links": 270,
+    "sha256": "55dd887459a485366d75ff725b70da03bbab285bfd954e51ff984c05b93435f3",
+    "missing": [],
+    "h3_schema_checked_ids": [
+      714,
+      716,
+      717,
+      718,
+      719,
+      720,
+      7001,
+      7002,
+      7003,
+      7004,
+      7039,
+      7043,
+      7044,
+      7045,
+      7046,
+      7047,
+      7048,
+      7320,
+      7321,
+      7322,
+      7323,
+      7331,
+      7524
+    ],
+    "full_neural_workflow_executed": false
+  },
+  "neural_inference_tested": false,
+  "paid_api_calls": 0,
+  "runninghub_cloud_tested": false,
+  "screenshot_reading": "NOT VERIFIED: screenshots were not attached",
+  "independent_review": {
+    "blocking_findings_remaining": 0,
+    "fix_rounds": 1,
+    "fixed": "Python source encoding declarations respected by registration scanner; two RED-to-GREEN regressions",
+    "documentation_scope_corrected": true
+  },
+  "original_json_check_scope": "All backend types registered; actual H3C/H3K schemas; all serialized links consistent. Not exhaustive external dynamic-port execution.",
+  "unrelated_optional_external_modules_missing": [
+    "dlib",
+    "skimage",
+    "mediapipe"
+  ],
+  "failure_lifecycle": "Failure leaves PENDING; caller explicitly cancels/cleans task. No success-only cleanup sink is claimed to run after an exception.",
+  "cloud_acceptance": "RH must verify actual enabled plugin versions, loading policy, models, GPU execution and image quality."
+}

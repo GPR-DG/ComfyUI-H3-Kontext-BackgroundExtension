@@ -1,0 +1,10 @@
+[project]
+name = "comfyui-h3-kontext-backgroundextension"
+version = "1.0.0"
+description = "Background-only H3 Kontext extension with pinned Core provider reuse"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "opencv-python-headless>=4.8,<5", "torch>=2.1"]
+
+[tool.comfy]
+DisplayName = "H3 Kontext BackgroundExtension"
+Icon = ""
